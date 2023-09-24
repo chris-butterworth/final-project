@@ -96,6 +96,7 @@ export const lightTheme = createTheme({
           // fontSize: "1rem",
           borderRadius: "10px",
           fontFamily: `"Grandstander", handwriting`,
+          color: "#000000"
         },
       },
     },
