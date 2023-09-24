@@ -1,10 +1,10 @@
 const { getAnagrams } = require("../models/game-model");
 const roomsMap = require("../roomsDatabase");
 
-const numOfWords = 9;
-const timeBetweenWords = 3;
-const timeBetweenRounds = 10;
-const anagramTime = 60;
+const numOfWords = process.env.NUM_OF_WORDS;
+const timeBetweenWords = process.env.TIME_BETWEEN_WORDS;
+const timeBetweenRounds = process.env.TIME_BETWEEN_ROUNDS;
+const anagramTime = process.env.ANAGRAM_TIME;
 
 const updateRoomsMap = (roomData) => {
   roomsMap.set(roomData.roomId, roomData);

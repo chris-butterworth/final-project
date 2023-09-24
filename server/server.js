@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const { Server } = require("socket.io");
 const http = require("http");
@@ -45,8 +46,6 @@ io.on("connection", (socket) => {
     joinMultiPlayerRoom(socket, roomId, callback);
   });
 
-
-
   socket.on("playerReady", () => {
     playerReady(socket);
   });
@@ -54,8 +53,6 @@ io.on("connection", (socket) => {
   socket.on("anagramAttempt", (attempt, time, hintCount) => {
     testAttempt(socket, attempt, time, hintCount);
   });
-
-
 });
 
 server.listen(port, () => {
