@@ -9,9 +9,7 @@ export const darkTheme = createTheme({
         },
       },
     },
-    MuiInput
-    
-    : {
+    MuiInput: {
       styleOverrides: {
         root: {
           fontFamily: `"Share Tech Mono", monospace`,
@@ -96,7 +94,6 @@ export const lightTheme = createTheme({
           // fontSize: "1rem",
           borderRadius: "10px",
           fontFamily: `"Grandstander", handwriting`,
-          color: "#000000"
         },
       },
     },
@@ -108,7 +105,6 @@ export const lightTheme = createTheme({
           // fontSize: "1rem",
           borderRadius: "10px",
           backgroundColor: "#d9d0b6",
-  
         },
       },
     },
@@ -117,7 +113,6 @@ export const lightTheme = createTheme({
     mode: "light",
     primary: {
       main: "#ef476f",
-      
     },
     secondary: {
       main: "#06d6a0",
