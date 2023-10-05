@@ -1,6 +1,6 @@
 {
   "scripts": {
     "test": "jest",
-    "start": "cd server/; node server.js"
+    "start": "cd server/; npm i; node server.js"
   }
 }
